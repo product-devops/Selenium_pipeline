@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.OhantomJSDriver;
 
 
 import com.oms.commonlib.ConstantClass;
@@ -21,12 +22,14 @@ public class Driver{
                 public static WebDriver configChromeDriver() throws Exception
                 {
                 	//System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
+                  System.setProperty("webdriver.PhantomJS.driver", ConstantClass.PhantomJsPath);
+                  options.setBinary(ConstantClass.PhantomJsPath);
                   
                   //ChromeOptions options = new ChromeOptions();
                   //options.setBinary(ConstantClass.chromeDriverPath);
                   //FirefoxBinary fb = new FirefoxBinary(); 
                   //fb.setEnvironmentProperty("DISPLAY", ":0"); 
-                  driver = new HtmlUnitDriver(); 
+                  driver = new PhantomJSDriver(); 
                 //ChromeDriver driver = new ChromeDriver(options);
             		//ChromeOptions options = new ChromeOptions();
             		//options.addExtensions(new File(ConstantClass.joshuaExtnPath));
