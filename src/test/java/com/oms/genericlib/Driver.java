@@ -22,9 +22,8 @@ public class Driver{
                 public static WebDriver configChromeDriver() throws Exception
                 {
                 	//System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
-                  System.setProperty("webdriver.PhantomJS.driver", ConstantClass.PhantomJsPath);
-                  options.setBinary(ConstantClass.PhantomJsPath);
-                  
+                  System.setProperty("phantomjs.binary.path", ConstantClass.PhantomJsPath);
+                                    
                   //ChromeOptions options = new ChromeOptions();
                   //options.setBinary(ConstantClass.chromeDriverPath);
                   //FirefoxBinary fb = new FirefoxBinary(); 
