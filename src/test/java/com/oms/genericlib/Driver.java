@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;   
+
 
 import com.oms.commonlib.ConstantClass;
 
@@ -22,9 +24,9 @@ public class Driver{
                   
                   //ChromeOptions options = new ChromeOptions();
                   //options.setBinary(ConstantClass.chromeDriverPath);
-                  FirefoxBinary fb = new FirefoxBinary(); 
-                  fb.setEnvironmentProperty("DISPLAY", ":0"); 
-                  driver = new FirefoxDriver(fb,null); 
+                  //FirefoxBinary fb = new FirefoxBinary(); 
+                  //fb.setEnvironmentProperty("DISPLAY", ":0"); 
+                  driver = new HtmlUnitDriver(); 
                 //ChromeDriver driver = new ChromeDriver(options);
             		//ChromeOptions options = new ChromeOptions();
             		//options.addExtensions(new File(ConstantClass.joshuaExtnPath));
