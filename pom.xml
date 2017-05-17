@@ -44,6 +44,30 @@
     <artifactId>selenium-java</artifactId>
     <version>2.52.0</version>
 	</dependency>
+		
+	<dependency>
+     <groupId>org.seleniumhq.selenium</groupId>
+     <artifactId>selenium-support</artifactId>
+     <version>2.52.0</version>
+        </dependency>
+
+     <!--substituting   phanbedder  with local Phanbedder implementation-->
+        <dependency>
+     <groupId>net.anthavio</groupId>
+     <artifactId>phanbedder-1.9.7</artifactId>
+     <version>1.0.0</version>
+        </dependency>
+
+
+
+             <dependency>
+                 <groupId>com.github.detro.ghostdriver</groupId>
+                 <artifactId>phantomjsdriver</artifactId>
+                 <version>1.1.0</version>
+             </dependency>
+
+
+		
 	</dependencies>
 	<profiles>
    <profile>
