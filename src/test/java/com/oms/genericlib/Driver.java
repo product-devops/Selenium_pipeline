@@ -13,6 +13,7 @@ public class Driver{
                 
                 static ConstantClass CC = new ConstantClass();
                 public static WebDriver driver;
+                public static FirefoxBinary driver;
                 public static WebDriver configChromeDriver() throws Exception
                 {
                 	//System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
