@@ -15,18 +15,20 @@ public class Driver{
                 public static WebDriver driver;
                 public static WebDriver configChromeDriver() throws Exception
                 {
-                	System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
+                	//System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
                   
-                  ChromeOptions options = new ChromeOptions();
-                  options.setBinary(ConstantClass.chromeDriverPath);
-
+                  //ChromeOptions options = new ChromeOptions();
+                  //options.setBinary(ConstantClass.chromeDriverPath);
+                  FirefoxBinary fb = new FirefoxBinary(); 
+                  fb.setEnvironmentProperty("DISPLAY", ":0"); 
+                  WebDriver driver = new FirefoxDriver(fb,null); 
                 //ChromeDriver driver = new ChromeDriver(options);
             		//ChromeOptions options = new ChromeOptions();
             		//options.addExtensions(new File(ConstantClass.joshuaExtnPath));
             		//DesiredCapabilities capabilities = new DesiredCapabilities();
             		//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             		//driver = new ChromeDriver(capabilities);
-                driver = new ChromeDriver(options);
+                //driver = new ChromeDriver(options);
             		driver.manage().window().maximize();
             		driver.manage().deleteAllCookies();
             		ReporterConfig.intialiseconfig();
