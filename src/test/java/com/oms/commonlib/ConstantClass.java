@@ -12,14 +12,10 @@ public class ConstantClass {
 	
 	public static String joshuaExtnPath = ".\\extensions\\chrome-ext.crx";
 	
-	public static String chromeDriverPath = "//usr//bin//chromedriver";
+	public static String chromeDriverPath = ".//usr//bin//chromedriver";
 
 	public static WebDriver globaldriver;
-	
-	ChromeOptions options = new ChromeOptions();
-	options.setBinary("//usr//bin//chromedriver");
 
-	ChromeDriver driver = new ChromeDriver(options);
 	
 	//
 	public static final File projectDir =  new File(System.getProperty("user.dir"));
