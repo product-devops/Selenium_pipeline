@@ -16,15 +16,16 @@ public class Driver{
                 public static WebDriver configChromeDriver() throws Exception
                 {
                 	System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
-            		ChromeOptions options = new ChromeOptions();
+            		//ChromeOptions options = new ChromeOptions();
             		//options.addExtensions(new File(ConstantClass.joshuaExtnPath));
-            		DesiredCapabilities capabilities = new DesiredCapabilities();
-            		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-            		driver = new ChromeDriver(capabilities);
+            		//DesiredCapabilities capabilities = new DesiredCapabilities();
+            		//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            		//driver = new ChromeDriver(capabilities);
+                driver = new ChromeDriver();
             		driver.manage().window().maximize();
             		driver.manage().deleteAllCookies();
             		ReporterConfig.intialiseconfig();
-                     ConstantClass.globaldriver=driver;
+                ConstantClass.globaldriver=driver;
                 	return driver;
                 }
 }
