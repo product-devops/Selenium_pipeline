@@ -15,7 +15,7 @@ public class Driver{
                 
                 static ConstantClass CC = new ConstantClass();
                 public static WebDriver driver;
-                public static FirefoxBinary driver;
+                //public static FirefoxBinary driver;
                 public static WebDriver configChromeDriver() throws Exception
                 {
                 	//System.setProperty("webdriver.chrome.driver", ConstantClass.chromeDriverPath);
@@ -24,7 +24,7 @@ public class Driver{
                   //options.setBinary(ConstantClass.chromeDriverPath);
                   FirefoxBinary fb = new FirefoxBinary(); 
                   fb.setEnvironmentProperty("DISPLAY", ":0"); 
-                  WebDriver driver = new FirefoxDriver(fb,null); 
+                  driver = new FirefoxDriver(fb,null); 
                 //ChromeDriver driver = new ChromeDriver(options);
             		//ChromeOptions options = new ChromeOptions();
             		//options.addExtensions(new File(ConstantClass.joshuaExtnPath));
