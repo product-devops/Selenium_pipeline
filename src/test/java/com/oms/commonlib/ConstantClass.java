@@ -12,11 +12,10 @@ public class ConstantClass {
 	
 	public static String joshuaExtnPath = ".\\extensions\\chrome-ext.crx";
 	
-	chromedriver = "//usr//bin//chromedriver"
-		os.environ["webdriver.chrome.driver"] = chromedriver
-		driver = webdriver.Chrome(chromedriver)
-		driver.get("http://www.google.com")
-		driver.quit()
+	chromedriver = "//usr//bin//chromedriver";
+		driver = webdriver.Chrome(chromedriver);
+		driver.get("http://www.google.com");
+		driver.quit();
 	//public static String chromeDriverPath = ".//usr//bin//chromedriver";
 
 	public static WebDriver globaldriver;
